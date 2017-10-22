@@ -154,10 +154,7 @@ sed -i '/SixXS IPv6/d' config.php
 sed -i "s/\$locale = 'en_US.UTF-8';/\$locale = 'en_US.UTF+8';/g" config.php
 cd
 
-# install pptp vpn
-wget -O /root/pptp.sh "http://vpn989.com/script/pptp.sh"
-chmod +x pptp.sh
-./pptp.sh
+
 
 # Instal DDOS Flate
 if [ -d '/usr/local/ddos' ]; then
