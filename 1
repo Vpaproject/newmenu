@@ -24,43 +24,38 @@ fi
 
 # go to root
 cd
-
+# Install lolcat
+apt-get install ruby -y
+apt-get install unzip
+wget https://github.com/busyloop/lolcat/archive/master.zip
+cd lolcat-master/bin
+gem install lolcat
+cd
+rm -r lolcat-master
+rm master.zip
+clear
+clear
 # check registered ip
 wget -q -O IP $source/Debian7/IP.txt
 if ! grep -w -q $MYIP IP; then
-	echo "Maaf, hanya IP yang terdaftar yang bisa menggunakan script ini!"
-        echo "     
-                       
-               =============== OS-32 & 64-bit ================
-               â™¦                                             â™¦
-               â™¦   AUTOSCRIPT CREATED BY YUSUF ARDIANSYAH    â™¦
-	       â™¦                     &                       â™¦
-	       â™¦                - BLANGKON -                 â™¦
-               â™¦       -----------About Us------------       â™¦ 
-               â™¦            Tel : +60109475453               â™¦
-               â™¦         { Sms/whatsapp/telegram }           â™¦ 
-               â™¦       http://facebook.com/t34mh4ck3r        â™¦    
-               â™¦     http://www.facebook.com/t34mh4ck3r      â™¦
-               â™¦                                             â™¦
-               =============== OS-32 & 64-bit ================
-               
-                 Please make payment before use auto script
-                 ..........................................
-                 .        Price: Rp.20.000 = 1IP          .
-                 .          *****************             .
-                 .           My-bank Account              .
-                 .          =================             .
-                 .         No   : Hubungi admin           .
-                 .         Name : YUSUF ARDIANSYAH        .
-                 ..........................................   
-                          Thank You For Choice Us"
-
-	echo "        Hubungi: editor ( Yusuf Ardiansyah)"
-	
+	echo "THANK YOU For choice Us!! Price: RM20.00 = 1IP !" | lolcat          
+echo "  ===================================================================="| lolcat
+echo "  # 	                  ☏☏ Contact Me ☏☏                     #"| lolcat
+echo "  #            TELEGRAM  :  https://t.me/orangkuatsabahanterkini     #"| lolcat
+echo "  #            WEBSITE.  :  http://www.borneobesthosting.me          #"| lolcat
+echo "  #            CHANNEL   : @NewPremiumService                        #"| lolcat
+echo "  #             EMAIL     : sales@borneobesthosting.me               #"| lolcat
+echo "  #------------------------------------------------------------------#"| lolcat
+echo "                  ☆☆ Autoscript By Borneobesthosting   ☆☆          " | lolcat
+echo "  ===================================================================="| lolcat
+echo " Maaf, hanya IP yang berdaftar boleh menggunakan script ini!" | lolcat
 	rm /root/IP
-	rm dual
 	rm -f /root/IP
 	exit
+ 
+fi
+# go to root
+cdexit
   
 fi
 # go to root
