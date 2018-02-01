@@ -45,10 +45,7 @@ echo "  #            CHANNEL   : @NewPremiumService                        #"| l
 echo "  #------------------------------------------------------------------#"| lolcat
 echo "                  ☆☆ Autoscript By Borneobesthosting   ☆☆          " | lolcat
 echo "  ===================================================================="| lolcat
-	# check registered ip
-wget -q -O IP $source/Debian7/IP.txt
-if ! grep -w -q $MYIP IP; then
-	echo "Maaf, hanya IP yang terdaftar yang bisa menggunakan script ini!" | lolcat
+echo " Maaf, hanya IP yang terdaftar yang bisa menggunakan script ini!" | lolcat
 	rm /root/IP
 	rm -f /root/IP
 	exit
