@@ -29,22 +29,24 @@ apt-get install ruby -y
 apt-get install unzip
 wget https://github.com/busyloop/lolcat/archive/master.zip
 gem install lolcat
-cd
-rm -r lolcat-master
 rm master.zip
-
+cd
 # check registered ip
 wget -q -O IP $source/Debian7/IP.txt
 if ! grep -w -q $MYIP IP; then
-	echo "Maaf, hanya IP yang terdaftar yang bisa menggunakan script ini!" | lolcat          
+	echo "THANK YOU For choice Us!" | lolcat          
 echo "  ===================================================================="| lolcat
-echo "  # 	                   Contact Me                            #"| lolcat
+echo "  # 	                   Contact Me                              #"| lolcat
 echo "  #            TELEGRAM  :  https://t.me/orangkuatsabahanterkini     #"| lolcat
-echo "  #               GROUP  :   https://                                #"| lolcat
-echo "  #             CHANNEL  : @NewPremiumService                        #"| lolcat
+echo "  #            WEBSITE.  :  http://www.borneobesthosting.me          #"| lolcat
+echo "  #            CHANNEL   : @NewPremiumService                        #"| lolcat
 echo "  #------------------------------------------------------------------#"| lolcat
+echo "                  ☆☆ Autoscript By Borneobesthosting   ☆☆          " | lolcat
 echo "  ===================================================================="| lolcat
-	
+	# check registered ip
+wget -q -O IP $source/Debian7/IP.txt
+if ! grep -w -q $MYIP IP; then
+	echo "Maaf, hanya IP yang terdaftar yang bisa menggunakan script ini!" | lolcat
 	rm /root/IP
 	rm -f /root/IP
 	exit
