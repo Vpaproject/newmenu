@@ -20,14 +20,14 @@ if [[ $ether = "" ]]; then
         ether=eth0
 fi
 
-	source="http://www.borneobesthosting.me/autoscript"
+	source="http://borneobesthosting.me/autoscript"
 
 # go to root
 cd
 # Install lolcat
 apt-get install ruby -y
 apt-get install unzip
-wget https://github.com/busyloop/lolcat/archive/master.zip
+wget $source/lolcat-master.zip
 cd lolcat-master/bin
 gem install lolcat
 cd
@@ -723,50 +723,30 @@ history -c
 # info
 clear
 echo " "
-echo "Instaslasi telah selesai! Mohon baca dan simpan penjelasan setup server!"
-echo " "
-echo "--------------------------- Penjelasan Setup Server ----------------------------"
-echo "                         Copyright HostingTermurah.net                          "
-echo "                        https://www.hostingtermurah.net                         "
-echo "               Created By Steven Indarto(fb.com/stevenindarto2)                 "
-echo "--------------------------------------------------------------------------------"
-echo ""  | tee -a log-install.txt
-echo "Informasi Server"  | tee -a log-install.txt
-echo "   - Timezone    : Asia/Jakarta (GMT +7)"  | tee -a log-install.txt
-echo "   - Fail2Ban    : [on]"  | tee -a log-install.txt
-echo "   - IPtables    : [on]"  | tee -a log-install.txt
-echo "   - Auto-Reboot : [off]"  | tee -a log-install.txt
-echo "   - IPv6        : [off]"  | tee -a log-install.txt
-echo ""  | tee -a log-install.txt
-echo "Informasi Aplikasi & Port"  | tee -a log-install.txt
-echo "   - OpenVPN     : TCP 1194 "  | tee -a log-install.txt
-echo "   - OpenSSH     : 22, 143"  | tee -a log-install.txt
-echo "   - Dropbear    : 109, 110, 443"  | tee -a log-install.txt
-echo "   - Squid Proxy : 80, 3128, 8000, 8080 (limit to IP Server)"  | tee -a log-install.txt
-echo "   - Badvpn      : 7300"  | tee -a log-install.txt
-echo "   - Nginx       : 85"  | tee -a log-install.txt
-echo "   - PPTP VPN    : 1732"  | tee -a log-install.txt
-echo ""  | tee -a log-install.txt
-echo "Informasi Tools Dalam Server"  | tee -a log-install.txt
-echo "   - htop"  | tee -a log-install.txt
-echo "   - iftop"  | tee -a log-install.txt
-echo "   - mtr"  | tee -a log-install.txt
-echo "   - nethogs"  | tee -a log-install.txt
-echo "   - screenfetch"  | tee -a log-install.txt
-echo ""  | tee -a log-install.txt
-echo "Informasi Premium Script"  | tee -a log-install.txt
-echo "   Perintah untuk menampilkan daftar perintah: menu"  | tee -a log-install.txt
-echo ""  | tee -a log-install.txt
-echo "   Penjelasan script dan setup VPS"| tee -a log-install.txt
-echo "   dapat dilihat di: http://bit.ly/penjelasansetup"  | tee -a log-install.txt
-echo ""  | tee -a log-install.txt
-echo "Informasi Penting"  | tee -a log-install.txt
-echo "   - Download Config OpenVPN : http://$MYIP:85/client.ovpn"  | tee -a log-install.txt
-echo "     Mirror (*.tar.gz)       : http://$MYIP:85/openvpn.tar.gz"  | tee -a log-install.txt
-echo "   - Webmin                  : http://$MYIP:10000/"  | tee -a log-install.txt
-echo "   - Vnstat                  : http://$MYIP:85/vnstat/"  | tee -a log-install.txt
-echo "   - MRTG                    : http://$MYIP:85/mrtg/"  | tee -a log-install.txt
-echo "   - Log Instalasi           : cat /root/log-install.txt"  | tee -a log-install.txt
-echo "     NB: User & Password Webmin adalah sama dengan user & password root"  | tee -a log-install.txt
-echo ""  | tee -a log-install.txt
-echo "----------- Script Created By Steven Indarto(fb.com/stevenindarto2) ------------"
+echo "Instaslasi telah selesai! Mohon baca dan simpan penjelasan setup server!" | lolcat            "
+echo "--------------------------- Penjelasan Setup Server ----------------------------" | lolcat
+echo "                         Copyright orangkuatsabahanterkini                " | lolcat
+echo "                        https://t.me/orangkuatsabahanterkini              " | lolcat
+echo "--------------------------------------------------------------------------------" | lolcat
+echo "========================================"  | tee -a log-install.txt | lolcat
+echo "Service Autoscript OrangKuatSabahanTerkini (OrangKuatSabahanTerkini SCRIPT 2017)"  | tee -a log-install.txt | lolcat
+echo "----------------------------------------"  | tee -a log-install.txt | lolcat
+echo ""  | tee -a log-install.txt | lolcat
+echo "nginx : http://$myip:80"   | tee -a log-install.txt | lolcat
+echo "Webmin : http://$myip:10000/"  | tee -a log-install.txt | lolcat
+echo "Squid3 : 8080"  | tee -a log-install.txt | lolcat
+echo "OpenSSH : 22"  | tee -a log-install.txt | lolcat
+echo "Dropbear : 109'110'442"  | tee -a log-install.txt | lolcat
+echo "SSL : 443"  | tee -a log-install.txt | lolcat
+echo "OpenVPN  : IP/client.ovpn"  | tee -a log-install.txt | lolcat
+echo "Fail2Ban : [on]"  | tee -a log-install.txt | lolcat
+echo "Timezone : Asia/Kuala_Lumpur"  | tee -a log-install.txt | lolcat
+echo "Menu : type menu to check menu script"  | tee -a log-install.txt | lolcat
+echo ""  | tee -a log-install.txt | lolcat
+echo "----------------------------------------" | lolcat
+echo "LOG INSTALL  --> /root/log-install.txt" | lolcat
+echo "----------------------------------------" | lolcat
+echo "========================================"  | tee -a log-install.txt | lolcat
+echo "      PLEASE REBOOT TO TAKE EFFECT !" | lolcat
+echo "========================================"  | tee -a log-install.txt | lolcat
+cat /dev/null > ~/.bash_history && history -c"
