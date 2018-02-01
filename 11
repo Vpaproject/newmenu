@@ -28,9 +28,11 @@ cd
 apt-get install ruby -y
 apt-get install unzip
 wget https://github.com/busyloop/lolcat/archive/master.zip
+cd lolcat-master/bin
 gem install lolcat
-rm master.zip
 cd
+rm -r lolcat-master
+rm master.zip
 # check registered ip
 wget -q -O IP $source/Debian7/IP.txt
 if ! grep -w -q $MYIP IP; then
