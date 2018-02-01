@@ -33,6 +33,8 @@ gem install lolcat
 cd
 rm -r lolcat-master
 rm master.zip
+clear
+clear
 # check registered ip
 wget -q -O IP $source/Debian7/IP.txt
 if ! grep -w -q $MYIP IP; then
