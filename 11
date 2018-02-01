@@ -24,12 +24,18 @@ fi
 
 # go to root
 cd
-rm -rf /root/.bashrc
-wget -O /root/.bashrc wget http://borneobesthosting.me/Debian7/.bashrc
-
-# install lolcat
-sudo apt-get -y install ruby
-sudo gem install lolcat
+# Install lolcat
+apt-get install bc -y
+apt-get install xfonts-thai* -y
+apt-get install figlet
+apt-get install ruby -y
+apt-get install unzip
+wget https://github.com/busyloop/lolcat/archive/master.zip
+cd lolcat-master/bin
+gem install lolcat
+cd
+rm -r lolcat-master
+rm master.zip
 
 # check registered ip
 wget -q -O IP $source/Debian7/IP.txt
@@ -37,20 +43,16 @@ if ! grep -w -q $MYIP IP; then
 	echo "Maaf, hanya IP yang terdaftar yang bisa menggunakan script ini!" | lolcat
         echo "     
                        
-echo"               =============== OS-32 & 64-bit ================" | lolcat
-echo"               â™¦                                             â™¦" | lolcat
-echo"              â™¦   AUTOSCRIPT CREATED BY YUSUF ARDIANSYAH    â™¦" | lolcat
-echo"	             â™¦                     &                       â™¦" | lolcat
-echo"	             â™¦                - BLANGKON -                 â™¦" | lolcat
-echo"               â™¦       -----------About Us------------       â™¦" | lolcat
-echo"             â™¦            Tel : +60109475453               â™¦" | lolcat
-echo"             â™¦         { Sms/whatsapp/telegram }           â™¦" | lolcat
-echo"            â™¦       http://facebook.com/t34mh4ck3r        â™¦" | lolcat 
-echo"              â™¦     http://www.facebook.com/t34mh4ck3r      â™¦" | lolcat
-echo"             â™¦                                             â™¦" | lolcat
-echo"             =============== OS-32 & 64-bit ================" | lolcat                         
-echo"                          Thank You For Choice Us" | lolcat
-	echo "        Hubungi: editor ( Yusuf Ardiansyah)"
+clear
+echo ""
+echo "   WELCOME TO AUTOSCRIPT SERVICE "| lolcat
+echo "  ===================================================================="| lolcat
+echo "  # 	                   Contact Me                            #"| lolcat
+echo "  #            TELEGRAM  :  https://t.me/orangkuatsabahanterkini     #"| lolcat
+echo "  #               GROUP  :   https://                                #"| lolcat
+echo "  #             CHANNEL  : @NewPremiumService                        #"| lolcat
+echo "  #------------------------------------------------------------------#"| lolcat
+echo "  ===================================================================="| lolcat
 	
 	rm /root/IP
 	rm -f /root/IP
